@@ -75,9 +75,9 @@ resume_site_dir() {
 setup_gh() {
   if [[ -z $(git branch -av | grep "$PAGES_BRANCH") ]]; then
     _no_pages_branch=true
-    git checkout -b "$PAGES_BRANCH" --force
+    git checkout -b "$PAGES_BRANCH"
   else
-    git checkout "$PAGES_BRANCH" --force
+    git checkout "$PAGES_BRANCH"
   fi
 }
 
@@ -110,9 +110,9 @@ deploy() {
   git commit -m "[Automation] Site update No.${GITHUB_RUN_NUMBER}"
 
   if $_no_pages_branch; then
-    git push -u origin "$PAGES_BRANCH"
+    git push -u origin "$PAGES_BRANCH" --force
   else
-    git push -f
+    git push -f --force
   fi
 }
 
