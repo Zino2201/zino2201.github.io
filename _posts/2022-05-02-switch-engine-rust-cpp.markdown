@@ -192,8 +192,8 @@ I'm not going to talk much about unsafe code in Rust, but yes, you can write uns
 
 ### Cargo
 
-Coming from C++, Cargo is a gift from god, really. I really forgot what is what like using a package manager thanks to C++.
-It is really easy to setup, configure and the amount of crates there already are is really cool! Bye CMake+vcpkg!
+Coming from C++, Cargo is a gift from god, really. I really forgot what was a great package manager thanks to C++.
+It is really easy to setup, configure and the amount of crates there already are is really cool! Bye CMake + vcpkg!
 
 ## State of game engine development in Rust
 
@@ -246,12 +246,12 @@ I hope you liked this post, it is my first one so it may be poorly written, and 
     /**
     *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
     *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
-    /*
+    
     var disqus_config = function () {
-    this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
-    this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    this.page.url = "https://zino2201.github.io{{page.url}};  // Replace PAGE_URL with your page's canonical URL variable
+    this.page.identifier = "{{page.id}}"; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
     };
-    */
+    
     (function() { // DON'T EDIT BELOW THIS LINE
     var d = document, s = d.createElement('script');
     s.src = 'https://zino2201.disqus.com/embed.js';
